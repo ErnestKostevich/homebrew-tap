@@ -33,6 +33,24 @@ class Horizon < Formula
     end
   end
 
+  def caveats
+    <<~EOS
+      Horizon AI is installed. Getting started:
+
+        horizon setup       # add your first AI provider key (30 seconds)
+        horizon             # launch the interactive TUI
+        horizon mobile      # pair a phone via QR code
+
+      Keys and memory live in your OS user data directory:
+        macOS:  ~/Library/Application Support/horizon-ai/
+        Linux:  ~/.config/horizon-ai/
+
+      Docs:    https://horizonaai.dev/docs
+      Issues:  https://github.com/ErnestKostevich/horizon-genesis/issues
+      License: BUSL-1.1 (personal + non-commercial use is free)
+    EOS
+  end
+
   test do
     assert_match(/Horizon AI v/, shell_output("#{bin}/horizon version"))
   end
