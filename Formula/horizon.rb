@@ -1,13 +1,13 @@
 class Horizon < Formula
   desc "Personal AI agent that runs on your machine — local-first, BYOK"
   homepage "https://horizonaai.dev"
-  version "0.0.2"
+  version "0.0.3"
   license "BUSL-1.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/ErnestKostevich/horizon-genesis/releases/download/cli-v0.0.2/horizon-macos-arm64"
-      sha256 "b2353f5f88f1cd2b461bf05ef71e46ac66421358a9d3fc41ee0cba83e71965e4"
+      url "https://github.com/ErnestKostevich/horizon-genesis/releases/download/cli-v0.0.3/horizon-macos-arm64"
+      sha256 "daf9341fb8e24581e810b8e6daf1b6f65cf211ba43638c6ba0a43637479e3dcf"
 
       def install
         bin.install "horizon-macos-arm64" => "horizon"
@@ -15,8 +15,8 @@ class Horizon < Formula
     end
 
     on_intel do
-      url "https://github.com/ErnestKostevich/horizon-genesis/releases/download/cli-v0.0.2/horizon-macos-x64"
-      sha256 "1e8163f855b19bf8a37d39611df7ba0e231625731387d9b805a9675f4f16f1b8"
+      url "https://github.com/ErnestKostevich/horizon-genesis/releases/download/cli-v0.0.3/horizon-macos-x64"
+      sha256 "8c5294f575e3c6c7ff3d43524b4df45ddaa3efeb58e9301f757f488a71932096"
 
       def install
         bin.install "horizon-macos-x64" => "horizon"
@@ -25,8 +25,8 @@ class Horizon < Formula
   end
 
   on_linux do
-    url "https://github.com/ErnestKostevich/horizon-genesis/releases/download/cli-v0.0.2/horizon-linux-x64"
-    sha256 "2ba167706cb1c145563d0b0346540b1ada1fc80bc11edfa0e3d38938f82489d9"
+    url "https://github.com/ErnestKostevich/horizon-genesis/releases/download/cli-v0.0.3/horizon-linux-x64"
+    sha256 "02b01fef7e8039edd31534b88951178a61aa2b573c9297e30e5c3c1cb5b2e87f"
 
     def install
       bin.install "horizon-linux-x64" => "horizon"
